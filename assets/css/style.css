@@ -20,12 +20,6 @@ header {
     margin-left: auto;
 
 }
-.content {
-
-    width: 960px;
-    margin: 0 auto;
-
-}
 
 h1 {
 
@@ -75,6 +69,8 @@ p {
 
 .container {
 
+    width: 960px;
+    margin: 0 auto;
     clear: both;
     background-color: #ffffff;
     border: solid #777777 1px;
@@ -86,6 +82,37 @@ form {
 
     clear: both;
     background-color: #ffffff;
+    padding: 20px 30px 20px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #777777
+
+}
+
+input[type=text] {
+
+   width: 100%;
+   margin: 10px 0px;
+   height: 20px;
+   border: 1px solid #777777;
+
+}
+
+input[type=submit] {
+
+    color:white;
+    background-color: #4aaaa5;
+    padding: 12px 20px;
+    font-size: 20px;
+    margin-top: 20px;
+
+}
+
+textarea {
+
+    height: 200px;
+    width: 100%;
+    margin: 10px 0px;
+    border: 1px solid #777777;
 
 }
 
