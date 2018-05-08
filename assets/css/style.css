@@ -73,17 +73,30 @@ p {
     clear: both;
     background-color: #ffffff;
     border: solid #777777 1px;
-    margin-bottom: 20px;
+    margin-bottom: 100px;
+    min-height: 100%;
 
+}
+
+.container:after {
+
+    content: "";
+    display: block;
+}
+
+.projects {
+
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    
 }
 
 .place_holder {
 
     width: 200px;
     height: 200px;
-    margin: 20px;
-    display: inline;
-
+    padding: 0px 10px;
 }
 
 form {
@@ -130,10 +143,15 @@ textarea {
     width: 200px;
     height: 200px;
     padding: 20px;
+    overflow: auto;
 
 }
 
-a:link {
+a {
+    text-decoration: none;
+}
+
+.nav-item:link {
 
     padding-left: 20px;
     text-decoration: none;
@@ -141,14 +159,14 @@ a:link {
 
 }
 
-a:visited {
+.nav-item:visited {
 
     text-decoration: none;
     color: #777777;
 
 }
 
-a:hover {
+.nav-item:hover {
 
     text-decoration: underline;
     color: #777777;
@@ -157,13 +175,104 @@ a:hover {
 
 footer {
 
-position: fixed;
-left: 0;
-bottom: 0;
-width: 100%;
-background-color: #666666;
-height: 60px;
-border-top: solid #4aaaa5 3px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #666666;
+    height: 60px;
+    border-top: solid #4aaaa5 3px;
 
 }
 
+@media screen and (max-width: 980px) {
+    .header_content{
+        width: 90%;
+    }
+
+    h1 {
+        margin-bottom: 1px;
+    }
+
+    .topnav {
+        padding: 30px;
+    }
+
+    .container {
+        width: 90%;
+        height: 100%;
+        margin-bottom: 100px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .projects {
+        display: inline-block;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 654px){
+
+    header {
+        width: 100%;
+        height: 50px;
+    }
+
+    .header_content {
+        width: 100%;
+        margin: 0;
+    }
+
+    h1 {
+
+        font-size: 20px;
+        height: 20px;
+        padding: 20px 0px;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+
+    }
+
+    .topnav {
+
+        width: 100%;
+        height: 10px;
+        text-align: center;
+        padding: 15px 0px;
+        border-bottom: solid 1px #777777;
+
+    }
+
+    #bio-image {
+        width: 90%;
+        margin: auto;
+        height: auto;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    footer {
+
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #666666;
+        height: 40px;
+        border-top: solid #4aaaa5 3px;
+    
+    }
+
+    .nav-item:link {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
